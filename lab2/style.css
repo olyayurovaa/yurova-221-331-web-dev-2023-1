@@ -1,0 +1,36 @@
+body {
+    margin: 0;
+    padding: 0 10px;
+    font-size: 16px;
+    line-height: 20px;
+    background-color: bisque;
+    font-family: "Arial", sans-serif;
+    text-align: justify;
+  }
+
+  header {
+    height: 60px;
+    font-size: 20px;
+    text-align: center;
+    line-height: normal;
+    color: black
+  }
+  .how {
+    width: 380px;
+  margin: 0;
+  }
+
+  .at{
+    width: 380px;
+  margin: 0;
+  }
+  fieldset {
+    border-radius: 5px;
+}
+
+input {
+    border-radius: 5px;
+}
+.msg {
+    border-radius: 5px;
+}

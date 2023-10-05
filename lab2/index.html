@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма обратной связи</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Форма обратной связи</h1>
+    </header>
+    
+
+    <form method="post" action="https://httpbin.org/post" enctype="multipart/form-data">
+
+        <input type="hidden" name="user_id" value="5">
+
+        <div>
+            <label for="fio">ФИО</label>
+            <input type="text" id="fio" name="fio" placeholder="Введите ФИО" value="Иванов Иван Иванович">
+        </div>
+
+        <div>
+            <label for="email">Электронная почта</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <fieldset class="how">
+            <legend>Как вы о нас узнали?</legend>
+            <div>
+                <input type="radio" name="source" id="friend" value="friend" checked>
+                <label for="friend">Друзья</label>
+            </div>
+            <div>
+                <input type="radio" name="source" id="ad" value="ad">
+                <label for="ad">Реклама</label>
+            </div>
+            <div>
+                <input type="radio" name="source" id="other" value="Other">
+                <label for="friend2">Другое</label>
+            </div>
+        </fieldset>
+
+        <div class="type">
+            <p> <label for="type">Тип обращения</label>
+            <select name="type" id="type">
+                <option value="1">Похвала</option>
+                <option value="2" selected>Предложение</option>
+            </select> </p>
+        </div>
+
+        <div>
+            <p> <label for="msg">Сообщение</label></p>
+            <textarea class="msg" name="msg" id="msg" cols="55" rows="10">Текст по умолчанию </textarea>
+        </div>
+
+        <div>
+            <fieldset class="at">
+            <legend> Вложение</legend>
+            <input type="file" name="at" id="at">
+            </fieldset>
+        </div>
+
+        <div>
+            <input type="checkbox" name="agree" id="agree" value="agree" required checked>
+            <label for="agree">Согласен с правилами обработки персональных данных.</label>
+        </div>
+
+        <button class="sub" type="submit">Отправить</button>
+    </form>
+
+</body>
+
+</html>
