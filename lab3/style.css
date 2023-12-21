@@ -1,0 +1,164 @@
+*, *::after, *::before{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: bisque;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.header{
+    background-color: aliceblue;
+    padding: 1.25rem;
+    border-bottom: 5px solid #0885c6;
+    top: 0;
+}
+
+.conteiner{
+    max-width: 95%;
+    margin: 0 auto;
+}
+
+
+.main-menu ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.main-menu li{
+    display: inline;
+    margin-right: 10px;
+}
+
+.header a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+.profile{
+    margin-left: auto;
+}
+
+.sidebar{
+    width: 15rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    position: sticky;
+    top: 63px;
+    flex-shrink: 0;
+}
+
+.page-content{
+    padding: 1rem;
+}
+
+.products-header{
+    margin: 0;
+}
+
+.product-card{
+    height: 21.8rem;
+    width: 31rem;
+    border: 2px solid #0885c6;
+    border-radius: 5px;
+    background-color: rgb(240, 240, 240);
+}
+
+.product-image{
+    float: left;
+    width: 50%;
+    height: 100%;
+
+}
+
+.product-image img{
+    width: 100%;
+    height: 100%;
+}
+
+.product-details{
+    float: right;
+    width: 50%;
+    height: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.product-details header{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.product-info{
+    text-align: justify;
+    font-size: 1.25;
+    height: 65%;
+    overflow: auto;
+}
+
+.action{
+    text-align: center;
+}
+
+.buy-btn{
+    font-size: 1rem;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 0;
+    overflow: hidden;
+}
+
+.buy-btn span{
+    display: inline-block;
+    padding: 0.625rem 1.25rem;
+}
+
+.price{
+    background-color: #333;
+}
+
+.buy{
+    background-color: #0885c6;
+    font-weight: bold;
+}
+
+.footer{
+    background-color: aliceblue;
+    padding: 1.25rem;
+    border-top: 5px solid #0885c6;
+    font-weight: bold;
+    bottom: 0;
+    width: 100%;
+}
+
+.scroll-to-top{
+    float: right;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 10;
+}
+
+.product{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.625rem;
+}
+
+.d-flex{
+    display: flex;
+}
